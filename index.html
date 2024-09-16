@@ -13,6 +13,7 @@
                 <li><a href="Procesos">Procesos</a></li>
                 <li><a href="Galeria">Galeria</a></li>
                 <li><a href="Intranet">Intranet</a></li>
+                <li><a href="Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -30,6 +31,73 @@
             <div>
                 <img src="semana03/assets/responsabilidad.jpg" alt="Responsabilidad" width="275" height="183">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error exercitationem similique quae iste excepturi voluptas ex aliquam praesentium! Officia, voluptatum. Deserunt iste amet minus, animi perspiciatis vitae voluptates aut omnis.</p>
+            </div>
+        </section>
+        <!--SECCION DE CONTACTO-->
+        <section>
+            <h2>Contactanos</h2>
+            <div>
+                <img  src="semana03/assets/contacto.jpg" alt="Contacto" width="50" height="50">
+            </div>
+            <div>
+                <form action="#">
+                    <!--Encabezado de contacto-->
+                    <p>
+                        <label for="">Registro</label><br>
+                        <label for="">
+                            <input type="radio" name="titulo" value="sr">
+                            Sr
+                        </label>
+                        <label for="">
+                            <input type="radio" name="titulo" value="sra">
+                            Sra
+                        </label>
+                        <label for="">
+                            <input type="radio" name="titulo" id="srta">
+                            Srta
+                        </label>
+                    </p>
+                    <!--Estructura del formulario-->
+                    <p>
+                        <label for="">Nombre</label><br>
+                        <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÀ-ÿ\s]+" title="name" required>
+                    </p>
+                    <p>
+                        <label for="">Apellido Paterno</label><br>
+                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+                    </p>
+                    <p>
+                        <label for="">Apellido Materno</label><br>
+                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+                    </p>
+                    <p>
+                        <label for="">Correo Electrónico</label><br>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@outlook.com">
+                    </p>
+                    <p>
+                        <label for="">Teléfono</label><br>
+                        <input type="tel" pattern="[0-9]+" id="telefono" name="telefono" required>
+                    </p>
+                    <p>
+                        <label for="">Direccion</label><br>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </p>
+                    <p>
+                        <label for="Regiones">Regiones</label>
+                        <select name="" id="">
+                            <option value="">Madre de Dios</option>
+                            <option value="">Cusco</option>
+                            <option value="">Puno</option>
+                            <option value="">Arequipa</option>
+                            <option value="">Apurimac</option>
+                            <option selected="true" value="">Ucayali</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button> Enviar </button>
+                        <button type="reset"> Limpiar </button>
+                    </p>
+                </form>
             </div>
         </section>
     </main>
